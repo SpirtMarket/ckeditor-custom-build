@@ -36,11 +36,12 @@
     "eslint-plugin-react-perf": "^3.3.0",
     "eslint-plugin-simple-import-sort": "^5.0.1",
     "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "standard-version": "^9.1.1",
     "stylelint": "^13.6.1",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-order": "^4.1.0",
-    "prettier": "^2.2.1"
+    "stylelint-order": "^4.1.0"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-adapter-ckfinder": "^25.0.0",
