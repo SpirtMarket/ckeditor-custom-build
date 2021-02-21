@@ -7,7 +7,7 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
-import DecoupledEditorBase from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
+import BalloonEditorBase from '@ckeditor/ckeditor5-editor-balloon/src/ballooneditor';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
@@ -21,7 +21,6 @@ import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import ListStyle from '@ckeditor/ckeditor5-list/src/liststyle';
 import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
-import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
@@ -29,7 +28,7 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 
 import PasteFromOffice from './plugins/pastefromoffice';
 
-class SMCKEditor extends DecoupledEditorBase {}
+class SMCKEditor extends BalloonEditorBase {}
 
 // Plugins to include in the build.
 SMCKEditor.builtinPlugins = [
@@ -60,7 +59,6 @@ SMCKEditor.builtinPlugins = [
   HtmlEmbed,
   TodoList,
   PasteFromOffice,
-  PageBreak,
 ];
 
 // Editor configuration.
@@ -85,7 +83,6 @@ SMCKEditor.defaultConfig = {
       'bulletedList',
       '|',
       'todoList',
-      'pageBreak',
       '|',
       'indent',
       'outdent',
