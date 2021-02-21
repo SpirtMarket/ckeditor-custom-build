@@ -25,6 +25,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import BlockToolbar from '@ckeditor/ckeditor5-ui/src/toolbar/block/blocktoolbar';
 
 import PasteFromOffice from './plugins/pastefromoffice';
 
@@ -32,6 +33,7 @@ class SMCKEditor extends BalloonEditorBase {}
 
 // Plugins to include in the build.
 SMCKEditor.builtinPlugins = [
+  BlockToolbar,
   Essentials,
   Alignment,
   FontSize,
@@ -63,6 +65,23 @@ SMCKEditor.builtinPlugins = [
 
 // Editor configuration.
 SMCKEditor.defaultConfig = {
+  blockToolbar: [
+    'heading',
+    '|',
+    'bulletedList',
+    'numberedList',
+    '|',
+    'outdent',
+    'indent',
+    '|',
+    'uploadImage',
+    'blockQuote',
+    'insertTable',
+    'mediaEmbed',
+    '|',
+    'undo',
+    'redo',
+  ],
   toolbar: {
     items: [
       'heading',
