@@ -84,7 +84,6 @@ SMCKEditor.defaultConfig = {
       'numberedList',
       'bulletedList',
       '|',
-      'placeholder',
       'todoList',
       'pageBreak',
       '|',
